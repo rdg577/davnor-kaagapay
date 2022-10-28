@@ -1,0 +1,13 @@
+@use '../custom' as *;
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+
+.goal {
+
+    h3 {
+        font-family: Lora, sans-serif;
+    }
+    &__content {
+        padding: 1.5rem;
+    }
+}

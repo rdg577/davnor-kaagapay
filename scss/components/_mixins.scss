@@ -1,0 +1,14 @@
+@use '../custom' as *;
+
+// gradient
+@mixin linearGradient {
+    background: linear-gradient(to right, rgba($primary, 1.0), rgba($secondary, 0.95));
+}
+
+// sentrong-sentro
+@mixin sentrongSentro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

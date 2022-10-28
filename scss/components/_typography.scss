@@ -1,0 +1,57 @@
+@use '../custom' as *;
+
+.display-2 {
+    margin-bottom: 1rem;
+    // text-transform: capitalize;
+    font-family: 'Montserrat', sans-serif;
+
+    &--intro {
+        display: inline-block;
+        font-weight: 700;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    &--description {
+        font-size: 1rem;
+        display: block;
+        margin-top: 1.2rem;
+        // letter-spacing: 0.1rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 1.3rem;
+            display: inline-block;
+        }
+
+        .kaagapay {
+            color: $red-davnor;
+            font-size: 1.5rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-shadow: 0 0 10px $white;
+        }
+    }
+}
+
+
+.heading-line::before {
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;                 // for horizontal centering
+}
+.heading-line::after {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.display-3 {
+    font-family: 'Montserrat', sans-serif;
+}
