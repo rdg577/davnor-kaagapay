@@ -35,7 +35,7 @@
 
 .heading-line::before {
     content: "";
-    width: 10rem;
+    width: 15rem;
     height: 0.1rem;
     display: block;
     background-color: $primary;
@@ -48,6 +48,25 @@
     padding-top: 0.5rem;
     display: block;
     background-color: $primary;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+
+.heading-line-2::before {
+    content: "";
+    width: 15rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $white;
+    margin: 0 auto;                 // for horizontal centering
+}
+.heading-line-2::after {
+    content: "";
+    width: 2rem;
+    height: 0.2rem;
+    padding-top: 0.5rem;
+    display: block;
+    background-color: $white;
     margin: 0 auto;
     margin-bottom: 1rem;
 }

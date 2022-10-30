@@ -10851,7 +10851,7 @@ textarea.form-control-lg {
 
 .heading-line::before {
   content: "";
-  width: 10rem;
+  width: 15rem;
   height: 0.1rem;
   display: block;
   background-color: #007035;
@@ -10865,6 +10865,26 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   display: block;
   background-color: #007035;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+.heading-line-2::before {
+  content: "";
+  width: 15rem;
+  height: 0.1rem;
+  display: block;
+  background-color: #fff;
+  margin: 0 auto;
+}
+
+.heading-line-2::after {
+  content: "";
+  width: 2rem;
+  height: 0.2rem;
+  padding-top: 0.5rem;
+  display: block;
+  background-color: #fff;
   margin: 0 auto;
   margin-bottom: 1rem;
 }
@@ -10921,6 +10941,61 @@ textarea.form-control-lg {
 }
 .goal__content {
   padding: 1.5rem;
+}
+
+.projects .card {
+  margin-bottom: 1rem;
+}
+
+.testimonials {
+  background: linear-gradient(to right, #007035, rgba(0, 168, 80, 0.95));
+  position: relative;
+  padding: 0;
+}
+.testimonials__card {
+  color: #007035;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 1.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  text-align: center;
+}
+.testimonials__card i {
+  font-size: 1.5rem;
+  color: rgba(0, 112, 53, 0.7);
+}
+.testimonials__card .ratings i {
+  color: rgba(0, 112, 53, 0.7);
+  font-size: 1rem;
+}
+.testimonials__photo {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.testimonials__photo img {
+  border: 0.25rem solid rgba(0, 112, 53, 0.7);
+}
+.testimonials__name {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+.testimonials__name h3 {
+  padding-top: 0.9rem;
+  text-transform: capitalize;
+}
+.testimonials__name p {
+  padding-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+.testimonials .carousel-buttons {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
