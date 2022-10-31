@@ -96,7 +96,7 @@
           <div class="col-md-6 landing-content text-center">
             <div class="video-box">
               <img src="assets/images/illustrations/landing-illustration-2.png" alt="program banner video" class="img-fluid" />
-              <a href="#" class=" position-absolute top-50 start-50 translate-middle" onclick="showLighBox();">
+              <a href="#" class=" position-absolute top-50 start-50 translate-middle" onclick="showLighBoxLanding();">
                 <span>
                   <i class="fa-regular fa-circle-play"></i>
                 </span>
@@ -225,7 +225,7 @@
         </div>
 
         <div class="row align-items-center">
-          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+          <div id="carouselTestimonials" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
 
               <!-- item 1 -->
@@ -316,11 +316,11 @@
 
             <div class="carousel-buttons">
 
-              <button class="btn btn-outline-light fa fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <button class="btn btn-outline-light fa fa-long-arrow-alt-left" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="prev">
                 <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span> -->
               </button>
-              <button class="btn btn-outline-light fa fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <button class="btn btn-outline-light fa fa-long-arrow-alt-right" type="button" data-bs-target="#carouselTestimonials" data-bs-slide="next">
                 <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span> -->
               </button>
@@ -334,6 +334,48 @@
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L48,154.7C96,181,192,235,288,256C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,85.3C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
     </section>
 
+
+    <!-- awards -->
+    <section id="awards" class="awards">
+      <div class="container">
+        <div class="row text-center">
+          <h2 class="display-3 fw-bold">Awards</h2>
+          <div class="heading-line mb-5"></div>
+        </div>        
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pb-5">
+            <a href="#" class="" onclick="showLighBoxAwards();">
+            <img src="assets/images/awards/award-1.jpg" alt="Plaque" class="img-fluid rounded-top rounded-bottom shadow-lg" />
+          </a>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pb-5">            
+            <p>
+              DAVNOR SECURES 3RD PLACE AS THE MOST COMPETITIVE PROVINCE, SHARES AWARD WITH THE 11 LGUs OF DAVAO DEL NORTE
+            </p>
+            <p>
+              The Province of Davao del Norte is the third Most Competitive Province in the country during the recently concluded 10th Cities and Municipalities Competitiveness Summit, held at the Philippine International Convention Center in Pasay City, Metro Manila last Thursday, October 20, 2022.
+            </p>
+            <p>
+              Davao del Norte garnered an average of 37.42%, just a few notches behind the Province of Cavite which ranked second at 37.68%, and the Province of Rizal placing first with a total average of 40.23%.
+            </p>
+            <p>
+              Bannering this year’s theme “A Decade of Excellence: Championing Innovation to Sustain Competitiveness”, the Summit is the culmination of the Department of Trade and Industry’s Cities and Municipalities Competitiveness Index (CMCI), an annual ranking of Philippine cities and municipalities developed by the National Competitiveness Council through the Regional Competitiveness Committees (RCCs) with the assistance of the United States Agency for International Development.
+            </p>
+            <p>
+              Davao del Norte has been consistent in the top three Most Competitive LGUs in the country in the province level, placing 2nd for two consecutive years in 2021 and 2021. The Davao del Norte contingent who were proudly on stage to receive the award, wished to share the award with the eleven (11) LGUs of Davao del Norte, which are the driving force behind the success of the province, and whose efforts collectively contribute to the overall ranking of the province in the CMCI.
+            </p>
+            <p>
+              Receiving the award for Davao del Norte in behalf of Provincial Governor Edwin I. Jubahib are Provincial Administrator Engr. Josies Jean Rabanoz, Assistant Provincial Administrator Maria Hazel Zafra, Engr. Lilia Edig, and Provincial Local Economic Investment Promotion Officer Ms. Joevynar Miedes. They were joined in by Department of Trade Industry – XI Regional Director Maria Belenda Q. Ambi, and DTI Davao del Norte Provincial Director Romeo Castañaga.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
   </main>
 
   <footer>
@@ -342,6 +384,8 @@
   <!-- vendor: glightbox  -->
   <script src="assets/vendors/glightbox/js/glightbox.min.js"></script>
   <script type="text/javascript">
+
+    //*************** landing section lightbox
     const lightbox = GLightbox({
       touchNavigation: true,
       autoplayVideos: true,
@@ -370,9 +414,53 @@
       ]
     });
     
-    function showLighBox() {
+    function showLighBoxLanding() {
       lightbox.open();
     }
+
+
+    //*************** awards section lightbox
+    const lightboxAwards = GLightbox({
+      touchNavigation: true,
+      autoplayVideos: false,
+      openEffect: 'zoom',
+      closeEffect: 'fade',
+      cssEfects: {
+        // This are some of the animations included, no need to overwrite
+        fade: { in: 'fadeIn', out: 'fadeOut' },
+        zoom: { in: 'zoomIn', out: 'zoomOut' }
+      },
+      elements: [
+        {
+            'href': './assets/images/awards/award-1.jpg',
+            'type': 'image',
+            'title': '3rd Most Competitive Province',
+            'description': 'The Province of Davao del Norte is the third Most Competitive Province in the country during the recently concluded 10th Cities and Municipalities Competitiveness Summit, held at the Philippine International Convention Center in Pasay City, Metro Manila last Thursday, October 20, 2022.',
+        },
+        {
+            'href': './assets/images/awards/award-0.jpg',
+            'type': 'image',
+        },
+        {
+            'href': './assets/images/awards/award-01.jpg',
+            'type': 'image',
+        },
+        {
+            'href': './assets/images/awards/award-02.jpg',
+            'type': 'image',
+        },
+        {
+            'href': './assets/images/awards/award-03.jpg',
+            'type': 'image',
+        },
+      ]
+    });
+    
+    function showLighBoxAwards() {
+      lightboxAwards.open();
+    }
+
+
   </script>
 
   <!-- Bootstrap JavaScript Libraries -->
